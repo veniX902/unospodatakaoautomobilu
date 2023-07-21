@@ -1,0 +1,82 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div>
+
+
+
+        <h3>Add Car:</h3>
+
+        <form method="post" action="/">
+            
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="Marka">Makes</span>
+                <input type="text" class="form-control" name="marka" aria-label="marka" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="Karoserija">Body style</span>
+                <input type="text" class="form-control" name="karoserija" aria-label="karosrija" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="Model">Model</span>
+                <input type="text" class="form-control" name="model" aria-label="Model" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="Godiste">Year</span>
+                <input type="text" class="form-control" name="godiste" aria-label="godiste" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="Snaga">Power</span>
+                <input type="text" class="form-control" name="snaga" aria-label="snaga" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="Gorivo">Fuel type</span>
+                <input type="text" class="form-control" name="gorivo" aria-label="gorivo" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="ZapreminaMotora">Engine</span>
+                <input type="text" class="form-control" name="zapreminamotora" aria-label="zapreminamotora" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="cena">Price</span>
+                <input type="text" class="form-control" name="cena" aria-label="cena" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="kontakt">Contact</span>
+                <input type="text" class="form-control" name="kotakt" aria-label="kontakt" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="opis">Basics</span>
+                <input type="text" class="form-control" name="opis" aria-label="opis" aria-describedby="basic-addon1">
+            </div>
+            <div class="d-grid gap-2">
+                <button class="btn btn-primary" type="submit">Add</button>
+                
+
+            </div>
+        </form>
+
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿@using PolovniAutomobili.Models;
+@model PolovniAutomobili.Models.Car
+@using PolovniAutomobili
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<SharedResource> localizer
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Home</h1>
+
+
+@if (Attendance.GetAttendants().Count == 0)
+{
+    <p>Currently there are no cars... <a href="@Url.Action("AddCar","Home")">Add them!</a> </p>
+    
+}
+else
+{
+    int counter = 0;
+
+    <table>
+        @foreach (object cars in Attendance.GetAttendants())
+        {
+            counter++;
+            <tr><td>@counter.</td><td>@cars</td></tr>
+        }
+    </table>
+}
